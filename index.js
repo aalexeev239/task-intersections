@@ -44,6 +44,9 @@ let intervals;
 // collecting data
 try {
     n = parseInt(inputs[0], 10);
+    if (isNaN(n) || n < 1 || n > 100) {
+        throw err;
+    }
     intervals = [];
     for (let i = 1; i <= n; i++) {
         let lineNumbers = inputs[i].split(' ');
