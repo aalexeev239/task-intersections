@@ -67,8 +67,8 @@ intervals.forEach((interval)=> {
     let isInSet = false;
 
     for (let i = 0; i < intersectionsSet.length; i++) {
-        let intervalSet = intersectionsSet[i];
-        let intersection = interval.getIntersection(intervalSet);
+        let intervalFromSet = intersectionsSet[i];
+        let intersection = interval.getIntersection(intervalFromSet);
         if (intersection) {
             intersectionsSet.splice(i, 1, intersection);
             isInSet = true;
