@@ -45,7 +45,7 @@ let intervals;
 try {
     n = parseInt(inputs[0], 10);
     if (isNaN(n) || n < 1 || n > 100) {
-        throw err;
+        throw new Error();
     }
     intervals = [];
     for (let i = 1; i <= n; i++) {
