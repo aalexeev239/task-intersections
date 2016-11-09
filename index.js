@@ -79,6 +79,6 @@ intervals.forEach((interval)=> {
 });
 
 let response = `${intersectionsSet.length}
-${intersectionsSet.map(i=>i.start).join(' ')}`;
+${intersectionsSet.map(i=>i.start).join(' ')}\n`;
 
-console.log(response);
+process.stdout.write(response);
